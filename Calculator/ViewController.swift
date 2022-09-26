@@ -7,6 +7,7 @@
 //  like add, subtract, divide etc.
 //
 //  Date : 09/22/2022
+//  Version: 1.0
 //
 //  Author 1:
 //  Name        :   Abraham Alfred Babu
@@ -14,7 +15,7 @@
 //
 //  Author 2:
 //  Name        :   Pia Mae Obias
-//  Student ID  :   801283632
+//  Student ID  :   301283632
 //
 //  Author 3:
 //  Name        :   Betrand Nyarko
@@ -36,7 +37,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Adding shadows and and font to all the number buttons
+        // Adding shadows and fonts to all the number buttons
         for numBtn in numberButtons {
             numBtn.titleLabel?.font =  UIFont(name: "Helvetica Neue", size: 33)
             numBtn.layer.shadowOpacity = 0.7
@@ -45,7 +46,7 @@ class ViewController: UIViewController {
             numBtn.layer.shadowColor = UIColor.black.cgColor
         }
         
-        // Adding shadows and and fonts to all the command buttons
+        // Adding shadows and fonts to all the command buttons
         for cmdBtn in commandButtons {
             cmdBtn.titleLabel?.font =  UIFont(name: "Helvetica Neue", size: 33)
             cmdBtn.layer.shadowOpacity = 0.7
