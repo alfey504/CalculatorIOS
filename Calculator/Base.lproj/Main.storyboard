@@ -272,11 +272,11 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXR-Zg-gWv">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egX-yt-qkX">
                                                 <rect key="frame" x="285" y="0.0" width="80" height="80"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="80" id="UdX-CE-bpE"/>
-                                                    <constraint firstAttribute="width" constant="80" id="tSR-6K-VTq"/>
+                                                    <constraint firstAttribute="width" constant="80" id="T7A-bl-FxU"/>
+                                                    <constraint firstAttribute="height" constant="80" id="TCv-co-OP1"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
@@ -284,7 +284,7 @@
                                                         <color key="backgroundColor" red="0.81176470588235294" green="0.74509803921568629" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content="-">
+                                                        <fragment content="+">
                                                             <attributes>
                                                                 <font key="NSFont" metaFont="system" size="33"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -362,11 +362,11 @@
                                                     </attributedString>
                                                 </buttonConfiguration>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egX-yt-qkX">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXR-Zg-gWv">
                                                 <rect key="frame" x="285" y="0.0" width="80" height="80"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="80" id="T7A-bl-FxU"/>
-                                                    <constraint firstAttribute="height" constant="80" id="TCv-co-OP1"/>
+                                                    <constraint firstAttribute="height" constant="80" id="UdX-CE-bpE"/>
+                                                    <constraint firstAttribute="width" constant="80" id="tSR-6K-VTq"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled">
@@ -374,7 +374,7 @@
                                                         <color key="backgroundColor" red="0.81176470588235294" green="0.74509803921568629" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
                                                     <attributedString key="attributedTitle">
-                                                        <fragment content="+">
+                                                        <fragment content="-">
                                                             <attributes>
                                                                 <font key="NSFont" metaFont="system" size="33"/>
                                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -518,7 +518,6 @@
                         <outletCollection property="numberButtons" destination="uc1-uZ-zMe" collectionClass="NSMutableArray" id="Gyt-ZI-kVX"/>
                         <outletCollection property="numberButtons" destination="shg-Hk-emi" collectionClass="NSMutableArray" id="aji-td-OsW"/>
                         <outletCollection property="numberButtons" destination="fnq-Ng-h0x" collectionClass="NSMutableArray" id="g9g-ap-i1I"/>
-                        <outletCollection property="commandButtons" destination="CXR-Zg-gWv" collectionClass="NSMutableArray" id="tmb-J7-gjU"/>
                         <outletCollection property="numberButtons" destination="zub-Y4-vVG" collectionClass="NSMutableArray" id="zKL-f6-tqk"/>
                         <outletCollection property="numberButtons" destination="Bo6-gJ-PXW" collectionClass="NSMutableArray" id="GVC-RD-4gS"/>
                         <outletCollection property="numberButtons" destination="wEA-yZ-Lh9" collectionClass="NSMutableArray" id="ytL-cY-OqP"/>
@@ -528,6 +527,7 @@
                         <outletCollection property="numberButtons" destination="LkB-OJ-xIy" collectionClass="NSMutableArray" id="qhi-nb-y5A"/>
                         <outletCollection property="numberButtons" destination="azJ-6F-zgc" collectionClass="NSMutableArray" id="8QO-sr-dLp"/>
                         <outletCollection property="commandButtons" destination="i8Q-nV-G17" collectionClass="NSMutableArray" id="Yc5-9p-TAo"/>
+                        <outletCollection property="commandButtons" destination="CXR-Zg-gWv" collectionClass="NSMutableArray" id="tmb-J7-gjU"/>
                         <outletCollection property="commandButtons" destination="egX-yt-qkX" collectionClass="NSMutableArray" id="WIh-M1-MGw"/>
                     </connections>
                 </viewController>
