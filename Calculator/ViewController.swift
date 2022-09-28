@@ -37,27 +37,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Adding shadows and fonts to all the number buttons
+        // Adding shadows to all the number buttons
         for numBtn in numberButtons {
-            numBtn.titleLabel?.font =  UIFont(name: "Helvetica Neue", size: 33)
             numBtn.layer.shadowOpacity = 0.7
             numBtn.layer.shadowOffset = CGSize(width: 3, height: 3)
             numBtn.layer.shadowRadius = 3
             numBtn.layer.shadowColor = UIColor.black.cgColor
         }
         
-        // Adding shadows and fonts to all the command buttons
+        // Adding shadows to all the command buttons
         for cmdBtn in commandButtons {
-            cmdBtn.titleLabel?.font =  UIFont(name: "Helvetica Neue", size: 33)
             cmdBtn.layer.shadowOpacity = 0.7
             cmdBtn.layer.shadowOffset = CGSize(width: 3, height: 3)
             cmdBtn.layer.shadowRadius = 3
             cmdBtn.layer.shadowColor = UIColor.black.cgColor
         }
-        
-        // Changing the font of the backspace button
-        backspace.titleLabel?.font = UIFont(name: "Helvetica Neue", size: 60)
-        
     }
     
     // Changing the color of the elements in the status bar

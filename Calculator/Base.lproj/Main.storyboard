@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="cxd-XV-HHn">
-                                <rect key="frame" x="13" y="353" width="365" height="456"/>
+                                <rect key="frame" x="12.666666666666657" y="347" width="365" height="456"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Hg5-eA-SO6">
                                         <rect key="frame" x="0.0" y="0.0" width="365" height="80"/>
@@ -29,18 +29,11 @@
                                                     <constraint firstAttribute="width" constant="80" id="Tq8-og-bwB"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="+/-">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="+/-">
-                                                            <attributes>
-                                                                <font key="NSFont" size="36" name="Arial-Black"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
                                                     <attributedString key="attributedSubtitle"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
@@ -56,18 +49,11 @@
                                                     <constraint firstAttribute="height" constant="80" id="bpM-Qe-zJE"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="C">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.96862745098039216" green="0.95686274509803915" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="C">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="36"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
                                                     <color key="baseForegroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                             </button>
@@ -78,43 +64,33 @@
                                                     <constraint firstAttribute="width" constant="80" id="reB-LC-slR"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="⌫">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="1" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="⌫">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="64"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="54"/>
                                                     <color key="baseForegroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhP-oS-7Uz">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhP-oS-7Uz">
                                                 <rect key="frame" x="285" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="dog-a1-lQh"/>
                                                     <constraint firstAttribute="width" constant="80" id="jBb-G2-LSN"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="÷">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.81176470588235294" green="0.74509803921568629" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="÷">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
                                                 </buttonConfiguration>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="G3o-eb-nPk" firstAttribute="leading" secondItem="Dor-ou-QA7" secondAttribute="trailing" constant="15" id="Lhr-v9-YgC"/>
+                                            <constraint firstItem="Dor-ou-QA7" firstAttribute="leading" secondItem="Vbu-ms-uDd" secondAttribute="trailing" constant="15" id="y39-vm-qAx"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1hc-rN-9k2">
                                         <rect key="frame" x="0.0" y="94" width="365" height="80"/>
@@ -126,18 +102,11 @@
                                                     <constraint firstAttribute="height" constant="80" id="HXJ-x6-0Yr"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="1">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="1">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uc1-uZ-zMe">
@@ -147,40 +116,26 @@
                                                     <constraint firstAttribute="height" constant="80" id="SbF-Ja-o8Q"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="2">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="2">
-                                                            <attributes>
-                                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                <font key="NSFont" size="33" name="HelveticaNeue"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdL-uO-OKg">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdL-uO-OKg">
                                                 <rect key="frame" x="190" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="7jZ-lY-FU6"/>
                                                     <constraint firstAttribute="width" constant="80" id="h9I-0W-gme"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="plain" title="3">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="3">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="36"/>
+                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8Q-nV-G17">
@@ -190,18 +145,11 @@
                                                     <constraint firstAttribute="width" constant="80" id="TsR-3N-r8q"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="x">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.81176470588235294" green="0.74509803921568629" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="x">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
                                             </button>
                                         </subviews>
@@ -216,18 +164,11 @@
                                                     <constraint firstAttribute="height" constant="80" id="WXO-5Z-RJ4"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="4">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="4">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zub-Y4-vVG">
@@ -237,18 +178,11 @@
                                                     <constraint firstAttribute="height" constant="80" id="gv6-Qi-owJ"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="5">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="5">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shg-Hk-emi">
@@ -258,18 +192,11 @@
                                                     <constraint firstAttribute="height" constant="80" id="Xi5-0g-HxG"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="6">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="6">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egX-yt-qkX">
@@ -279,18 +206,11 @@
                                                     <constraint firstAttribute="height" constant="80" id="TCv-co-OP1"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="+">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.81176470588235294" green="0.74509803921568629" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="+">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
                                             </button>
                                         </subviews>
@@ -305,18 +225,11 @@
                                                     <constraint firstAttribute="height" constant="80" id="etu-wL-WVF"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="7">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="7">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEA-yZ-Lh9">
@@ -326,18 +239,11 @@
                                                     <constraint firstAttribute="width" constant="80" id="Jeb-Nq-vnA"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="8">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="8">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo6-gJ-PXW">
@@ -348,18 +254,11 @@
                                                 </constraints>
                                                 <size key="titleShadowOffset" width="-1" height="0.0"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="9">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="9">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXR-Zg-gWv">
@@ -369,18 +268,11 @@
                                                     <constraint firstAttribute="width" constant="80" id="tSR-6K-VTq"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="-">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.81176470588235294" green="0.74509803921568629" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="-">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
                                             </button>
                                         </subviews>
@@ -395,18 +287,11 @@
                                                     <constraint firstAttribute="height" constant="80" id="bDA-aR-tN4"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="%">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="%">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KH7-Vi-Y5i">
@@ -416,18 +301,11 @@
                                                     <constraint firstAttribute="width" constant="80" id="2QV-NR-klQ"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="0">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="0">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azJ-6F-zgc">
@@ -437,18 +315,11 @@
                                                     <constraint firstAttribute="width" constant="80" id="zBw-zM-hhc"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title=".">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content=".">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtW-W9-AfS">
@@ -458,18 +329,11 @@
                                                     <constraint firstAttribute="width" constant="80" id="z0c-nh-9y0"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled">
+                                                <buttonConfiguration key="configuration" style="filled" title="=">
                                                     <backgroundConfiguration key="background" cornerRadius="25">
                                                         <color key="backgroundColor" red="1" green="0.85882352941176465" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                                                     </backgroundConfiguration>
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="=">
-                                                            <attributes>
-                                                                <font key="NSFont" metaFont="system" size="33"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                     <color key="baseForegroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
                                             </button>
@@ -478,7 +342,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQN-5V-m9L">
-                                <rect key="frame" x="12" y="249" width="362" height="75"/>
+                                <rect key="frame" x="12" y="248.99999999999997" width="362" height="71.666666666666657"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="362" id="VDq-r7-9i4"/>
                                 </constraints>
@@ -496,15 +360,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="cxd-XV-HHn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12.666666666666657" id="6sz-IX-RM0"/>
                             <constraint firstItem="FAr-W1-a2d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="149" id="9Fm-TV-RXA"/>
                             <constraint firstItem="FAr-W1-a2d" firstAttribute="leading" secondItem="fQN-5V-m9L" secondAttribute="leading" id="Bd9-hR-eQw"/>
                             <constraint firstItem="fQN-5V-m9L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="EF1-dG-02K"/>
-                            <constraint firstItem="cxd-XV-HHn" firstAttribute="top" secondItem="fQN-5V-m9L" secondAttribute="bottom" constant="29" id="LYA-5i-CgH"/>
+                            <constraint firstItem="cxd-XV-HHn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JHo-Tr-PvI"/>
                             <constraint firstItem="fQN-5V-m9L" firstAttribute="top" secondItem="FAr-W1-a2d" secondAttribute="bottom" constant="8" id="b3N-5B-676"/>
                             <constraint firstItem="FAr-W1-a2d" firstAttribute="trailing" secondItem="fQN-5V-m9L" secondAttribute="trailing" id="izT-8P-yqz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cxd-XV-HHn" secondAttribute="bottom" constant="1" id="k8r-WQ-Jff"/>
+                            <constraint firstItem="cxd-XV-HHn" firstAttribute="top" secondItem="fQN-5V-m9L" secondAttribute="bottom" constant="26.333333333333371" id="jzb-lh-W3v"/>
                             <constraint firstItem="fQN-5V-m9L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="202" id="pEg-gS-8T7"/>
-                            <constraint firstItem="cxd-XV-HHn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="13" id="r5r-4z-Pom"/>
                         </constraints>
                     </view>
                     <connections>
