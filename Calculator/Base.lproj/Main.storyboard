@@ -41,6 +41,10 @@
                                                         <integer key="value" value="40"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0kp-gO-KJH"/>
+                                                    <action selector="operatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M5I-BZ-2zK"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dor-ou-QA7">
                                                 <rect key="frame" x="95" y="0.0" width="80" height="80"/>
@@ -56,6 +60,9 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
                                                     <color key="baseForegroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="operatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lvR-gE-fRo"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3o-eb-nPk">
                                                 <rect key="frame" x="190" y="0.0" width="80" height="80"/>
@@ -71,6 +78,9 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="54"/>
                                                     <color key="baseForegroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="operatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DEQ-sI-SN7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhP-oS-7Uz">
                                                 <rect key="frame" x="285" y="0.0" width="80" height="80"/>
@@ -85,6 +95,9 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="operatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ep1-Xv-I2k"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -108,6 +121,9 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMZ-vc-QGC"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uc1-uZ-zMe">
                                                 <rect key="frame" x="95" y="0.0" width="80" height="80"/>
@@ -122,6 +138,9 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t1r-1b-Mnj"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdL-uO-OKg">
                                                 <rect key="frame" x="190" y="0.0" width="80" height="80"/>
@@ -137,6 +156,9 @@
                                                     <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="36"/>
                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d05-aI-J0q"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8Q-nV-G17">
                                                 <rect key="frame" x="285" y="0.0" width="80" height="80"/>
@@ -151,6 +173,9 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="operatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Gb-st-dUy"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -170,6 +195,9 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bJa-wb-QWi"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zub-Y4-vVG">
                                                 <rect key="frame" x="95" y="0.0" width="80" height="80"/>
@@ -184,6 +212,9 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rWd-zS-fHl"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shg-Hk-emi">
                                                 <rect key="frame" x="190" y="0.0" width="80" height="80"/>
@@ -198,6 +229,9 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOs-0W-AdR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="egX-yt-qkX">
                                                 <rect key="frame" x="285" y="0.0" width="80" height="80"/>
@@ -212,6 +246,9 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="operatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Ti-Je-pyl"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -231,6 +268,9 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1eR-eZ-Syf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEA-yZ-Lh9">
                                                 <rect key="frame" x="95" y="0.0" width="80" height="80"/>
@@ -245,6 +285,9 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LZm-4j-24F"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo6-gJ-PXW">
                                                 <rect key="frame" x="190" y="0.0" width="80" height="80"/>
@@ -260,6 +303,9 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZE5-gl-Kcy"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXR-Zg-gWv">
                                                 <rect key="frame" x="285" y="0.0" width="80" height="80"/>
@@ -274,6 +320,9 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="operatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TF4-M0-eqZ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -293,6 +342,9 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KYg-TW-Ad1"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KH7-Vi-Y5i">
                                                 <rect key="frame" x="95" y="0.0" width="80" height="80"/>
@@ -307,6 +359,9 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lxg-kX-bqV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azJ-6F-zgc">
                                                 <rect key="frame" x="190" y="0.0" width="80" height="80"/>
@@ -321,6 +376,9 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJ6-ky-AQv"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtW-W9-AfS">
                                                 <rect key="frame" x="285" y="0.0" width="80" height="80"/>
@@ -336,12 +394,15 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                     <color key="baseForegroundColor" red="0.61960784313725492" green="0.48627450980392156" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="operatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0h6-Lp-lXs"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50.50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQN-5V-m9L">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQN-5V-m9L">
                                 <rect key="frame" x="12" y="248.99999999999997" width="362" height="71.666666666666657"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="362" id="VDq-r7-9i4"/>
@@ -350,7 +411,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25.25+25.25" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAr-W1-a2d">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAr-W1-a2d">
                                 <rect key="frame" x="12" y="196" width="362" height="45"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -372,7 +433,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="backspace" destination="G3o-eb-nPk" id="bYi-md-7Lu"/>
+                        <outlet property="historyLabel" destination="FAr-W1-a2d" id="uhK-x8-zM2"/>
+                        <outlet property="resultLabel" destination="fQN-5V-m9L" id="dEy-hG-fvS"/>
                         <outletCollection property="commandButtons" destination="Vbu-ms-uDd" collectionClass="NSMutableArray" id="kTS-1m-r3I"/>
                         <outletCollection property="commandButtons" destination="xhP-oS-7Uz" collectionClass="NSMutableArray" id="oPA-MM-6xQ"/>
                         <outletCollection property="commandButtons" destination="Dor-ou-QA7" collectionClass="NSMutableArray" id="eEt-Tl-jYJ"/>

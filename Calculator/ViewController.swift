@@ -31,8 +31,16 @@ class ViewController: UIViewController {
     // reference to all the command buttons
     @IBOutlet var commandButtons: [UIButton]!
     
-    // reference to the backspace button
-    @IBOutlet weak var backspace: UIButton!
+    // reference to the result label
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    // refernce to history label
+    @IBOutlet weak var historyLabel: UILabel!
+    
+    var resultLabelReady: Bool = true
+    var operandStack: [Float] = [] // stack for storing operands
+    var operatorStack: [String] = [] // stack for storing operator
+    var historyStack: [String] = [] // for populating the history label with data
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +65,77 @@ class ViewController: UIViewController {
     // Changing the color of the elements in the status bar
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    @IBAction func numberClicked(_ sender: UIButton) {
+        let button = sender as UIButton
+        let curentInput = button.titleLabel!.text
+        let resultLabelText = resultLabel.text
+        
+        switch curentInput {
+            case "0":
+                if (resultLabelText != "0"){
+                    resultLabel.text?.append("0")
+                }
+            case ".":
+                if (!resultLabelText!.contains(".")){
+                    resultLabel.text?.append(".")
+                }
+            default:
+                if (resultLabelText == "0" || !resultLabelReady){
+                    resultLabel.text = ""
+                    resultLabelReady = true
+                }
+                
+                if(resultLabelReady){
+                    resultLabel.text?.append(curentInput!)
+                }
+        }
+    }
+    
+    
+    @IBAction func operatorClicked(_ sender: UIButton) {
+        let button = sender as UIButton
+        let currentOperator  = button.titleLabel!.text
+        let currentOperand = resultLabel.text
+        evaluate(currentOperator: currentOperator!, currentOperand: currentOperand!)
+    }
+    
+    func evaluate(currentOperator: String, currentOperand:String){
+        
+        if(operatorStack.isEmpty){
+            operandStack.append(Float(currentOperand)!)
+            operatorStack.append(currentOperator)
+            resultLabel.text? = "0"
+        }else{
+            let lhs = operandStack.last
+            operandStack.removeLast()
+            let rhs = Float(currentOperand)!
+            let op =  operatorStack.last
+            operatorStack.removeLast()
+            resultLabel.text = "0"
+            
+            let result = calculate(lhs: lhs!, rhs: rhs, op:op!)
+            operandStack.append(result)
+            operatorStack.append(currentOperator)
+            historyLabel.text = String(result)
+        }
+    }
+    
+    func calculate(lhs:Float, rhs:Float, op:String) -> Float{
+        
+        switch op {
+            case "+":
+                return(lhs+rhs)
+            case "-":
+                return(lhs-rhs)
+            case "÷":
+                return(lhs/rhs)
+            case "x":
+                return(lhs*rhs)
+            default:
+                return(0)
+        }
     }
 }
 
