@@ -42,7 +42,6 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0kp-gO-KJH"/>
                                                     <action selector="operatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M5I-BZ-2zK"/>
                                                 </connections>
                                             </button>
@@ -343,7 +342,7 @@
                                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="numberClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KYg-TW-Ad1"/>
+                                                    <action selector="operatorClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZYv-hK-tTm"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KH7-Vi-Y5i">
