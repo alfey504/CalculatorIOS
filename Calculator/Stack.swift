@@ -9,7 +9,7 @@ import Foundation
 
 struct StringStack{
     var stack: [String] = []
-    
+    let operatorList: Array<String> = ["+", "-", "÷", "x", "%"]
     // add a new value to stack
     mutating func push(val: String){
         self.stack.append(val)
@@ -27,15 +27,6 @@ struct StringStack{
         self.stack = []
     }
     
-    //rerturns the last operator in stack
-    func getLastOperator() -> String{
-        for item in self.stack.reversed() {
-            if(item == "x" || item == "÷" ||  item == "+" || item == "-"){
-                return(item)
-            }
-        }
-        return("~")
-    }
     
     // pushes to stack in context of operator and operand
     mutating func pushToStack(op: String, operand: String){
@@ -48,7 +39,7 @@ struct StringStack{
     //retuns the next operator and the index after given index
     func findNextOperator(currentIndex: Int, stack: Array<String>) -> (String, Int){
         for i in (currentIndex+1...stack.count-1){
-            if(["+", "-", "÷", "x", "%"].contains(stack[i])){
+            if(operatorList.contains(stack[i])){
                 return(stack[i], i)
             }
         }
@@ -95,46 +86,50 @@ struct StringStack{
         return(temp)
     }
     
+    //given an index in mathematical expression perform the operation at index on lhs and rhs
+    func evaluateOperationAtIndex(index: Int, expression: Array<String>) -> Array<String>{
+        let lhs = Float(expression[index-1]), rhs = Float(expression[index+1])
+        let result = self.calculate(lhs: lhs!, rhs: rhs!, op: expression[index])
+        let temp = replaceInPlace(val: String(result), pos: index, array: expression)
+        return(temp)
+    }
+    
     // evaluate all the math expression in stack
     mutating func evaluate() -> String{
         var temp = self.stack
         
         //remove the the last element if its an operator
-        if (["+", "-", "x", "÷", "%"].contains(temp.last)){
+        if (operatorList.contains(temp.last!)){
             temp.removeLast()
         }
-                
+        
+        //loop until all the operations are done
         while(temp.count > 1){
             print(temp)
             var i = 0
             var prevOp: String = "nill"
             while (i < temp.count){
                 //serching for an operator
-                if(["+", "-", "x", "÷", "%"].contains(temp[i])){
+                if(operatorList.contains(temp[i])){
                     let (newOp, j) = self.findNextOperator(currentIndex: i, stack: temp)
                     if(newOp != "nill"){
                         //perform the operation if higher in precedence from the next operator
                         if(dmasCompare(op1: temp[i], op2: newOp)){
-                            let lhs = Float(temp[i-1]), rhs = Float(temp[i+1])
-                            let result = self.calculate(lhs: lhs!, rhs: rhs!, op: temp[i])
-                            temp = replaceInPlace(val: String(result), pos: i, array: temp)
-                            i+=1
+                            temp = evaluateOperationAtIndex(index: i, expression: temp)
                         }else{
                             // set the iterator index as the next operator
                             prevOp = temp[i]
                             i = j
                         }
                     }else{
+                        //if there was no prevoius op that is it was the only operator
                         if(prevOp == "nill"){
-                            let lhs = Float(temp[i-1]), rhs = Float(temp[i+1])
-                            let result = self.calculate(lhs: lhs!, rhs: rhs!, op: temp[i])
-                            temp = replaceInPlace(val: String(result), pos: i, array: temp)
+                            temp = evaluateOperationAtIndex(index: i, expression: temp)
                             i+=1
                             break
-                        }else if(dmasCompare(op1: temp[i], op2: prevOp)){
-                            let lhs = Float(temp[i-1]), rhs = Float(temp[i+1])
-                            let result = self.calculate(lhs: lhs!, rhs: rhs!, op: temp[i])
-                            temp = replaceInPlace(val: String(result), pos: i, array: temp)
+                        //if there was there was compare precedence
+                        }else if(dmasCompare(op1: temp[i], op2: prevOp)){ //if there was compare precedence
+                            temp = evaluateOperationAtIndex(index: i, expression: temp)
                             i+=1
                             break
                         }else{

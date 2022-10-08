@@ -71,11 +71,11 @@ class ViewController: UIViewController {
     
     @IBAction func numberClicked(_ sender: UIButton) {
         let button = sender as UIButton
-        let curentInput = button.titleLabel!.text
+        let currentInput = button.titleLabel!.text
         let resultLabelText = resultLabel.text
         
         if(!resultState){
-            switch curentInput {
+            switch currentInput {
             case "0":
                 if (resultLabelText != "0"){
                     resultLabel.text?.append("0")
@@ -91,9 +91,13 @@ class ViewController: UIViewController {
                 }
                 
                 if(resultLabelReady){
-                    resultLabel.text?.append(curentInput!)
+                    resultLabel.text?.append(currentInput!)
                 }
             }
+        }else{
+            resultLabel.text = ""
+            resultLabel.text?.append(currentInput!)
+            resultState = false
         }
     }
     
