@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     var resultState: Bool = false
     
     // to store all the operators and operands
-    var operationStack = StringStack()
+    var prefixStack = MathExpression()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,6 +96,9 @@ class ViewController: UIViewController {
             }
         }else{
             resultLabel.text = ""
+            if(!resultLabelReady) {
+                resultLabelReady = true
+            }
             resultLabel.text?.append(currentInput!)
             resultState = false
         }
@@ -109,15 +112,16 @@ class ViewController: UIViewController {
         
         if(historyRefreshReady){
             historyRefreshReady = false
+            prefixStack.clearHistory()
         }
         
         if(resultState){
             resultState = false
         }
-        evaluate(currentOperator: currentOperator!, currentOperand: currentOperand!)
+        inputHandler(currentOperator: currentOperator!, currentOperand: currentOperand!)
     }
     
-    func evaluate(currentOperator: String, currentOperand:String){
+    func inputHandler(currentOperator: String, currentOperand:String){
         
         switch currentOperator{
         case "C":
@@ -135,49 +139,33 @@ class ViewController: UIViewController {
                 resultLabel.text? = "-" + resultLabel.text!
             }
         case "=":
-            operationStack.pushToStack(op: currentOperator, operand: currentOperand)
-            operationStack.printStack()
-            let result2 = operationStack.evaluate()
-            resultLabel.text = String(result2)
-            operationStack.clearStack()
+            prefixStack.pushToPrefixStack(op: currentOperator, oprand: currentOperand)
+            print("prefixStack:-")// for reference
+            prefixStack.printStack()
+            let result = prefixStack.evaluate()
+            resultLabel.text = String(result)
             resultLabelReady = false
             historyRefreshReady = true
             resultState = true
-            
         default:
-            operationStack.pushToStack(op: currentOperator, operand: currentOperand)
-            if(operationStack.stack.count >= 3){
-                let result = operationStack.evaluate()
+            prefixStack.pushToPrefixStack(op: currentOperator, oprand: currentOperand)
+            print("prefixStack:-")// for reference
+            prefixStack.printStack()
+            if(prefixStack.prefixExpression.count >= 3){
+                let result = prefixStack.evaluate(incomplete: true)
                 resultLabel.text = result
                 resultLabelReady = false
             }else{
-                operationStack.printStack()
                 resultLabel.text? = "0"
             }
             
         }
-        historyLabel.text?  = operationStack.stack.joined()
+        historyLabel.text?  = prefixStack.history.joined()
         
-    }
-    
-    func calculate(lhs:Float, rhs:Float, op:String) -> Float{
-        
-        switch op {
-        case "+":
-            return(lhs+rhs)
-        case "-":
-            return(lhs-rhs)
-        case "÷":
-            return(lhs/rhs)
-        case "x":
-            return(lhs*rhs)
-        default:
-            return(0)
-        }
     }
     
     func clearCalculator() {
-        operationStack.clearStack()
+        prefixStack.clearAll()
         historyLabel.text? = ""
         resultLabel.text? = "0"
         resultLabelReady = true
