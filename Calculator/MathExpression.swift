@@ -9,6 +9,7 @@ import Foundation
 
 
 struct MathExpression{
+    
     var prefixExpression :Array<String> = []
     var history: Array<String> = []
     let operatorList = ["+", "-", "x", "÷", "%"]
@@ -58,7 +59,7 @@ struct MathExpression{
         return(false)
     }
     
-    mutating func pushToPrefixStack(op: String, oprand: String) {
+    mutating func addToExpression(op: String, oprand: String) {
         self.putToHistory(op: op, oprand: oprand)
         if(self.prefixExpression.isEmpty){
             self.push(val: op)

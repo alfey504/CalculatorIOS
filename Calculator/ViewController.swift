@@ -139,7 +139,7 @@ class ViewController: UIViewController {
                 resultLabel.text? = "-" + resultLabel.text!
             }
         case "=":
-            prefixStack.pushToPrefixStack(op: currentOperator, oprand: currentOperand)
+            prefixStack.addToExpression(op: currentOperator, oprand: currentOperand)
             print("prefixStack:-")// for reference
             prefixStack.printStack()
             let result = prefixStack.evaluate()
@@ -148,7 +148,7 @@ class ViewController: UIViewController {
             historyRefreshReady = true
             resultState = true
         default:
-            prefixStack.pushToPrefixStack(op: currentOperator, oprand: currentOperand)
+            prefixStack.addToExpression(op: currentOperator, oprand: currentOperand)
             print("prefixStack:-")// for reference
             prefixStack.printStack()
             if(prefixStack.prefixExpression.count >= 3){
